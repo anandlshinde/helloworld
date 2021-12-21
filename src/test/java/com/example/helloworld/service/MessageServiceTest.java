@@ -17,7 +17,7 @@ public class MessageServiceTest {
 
     @Test
     public void getMessageTest(){
-        //String expected_Result="Hello Spring Boot World";
+        String expected_Result="Hello Spring Boot World";
         log.info("Test method executing ...");
         String actual_result=messageService.getMessage();
         assertEquals(expected_Result,actual_result);
