@@ -1,4 +1,4 @@
 FROM openjdk
-COPY target/*.jar /
-EXPOSE 8080
-ENTRYPOINT ["java","-jar","/helloworld-1.0-SNAPSHOT.jar"]
+EXPOSE 9090
+ADD /target/helloworld11.jar helloworld11.jar
+ENTRYPOINT ["java","-jar","/helloworld11.jar"]
